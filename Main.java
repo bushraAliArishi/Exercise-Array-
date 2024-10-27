@@ -8,35 +8,35 @@ public class Main {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         System.out.println("Exercise (Array)");
-//        System.out.println("""
-//                    ********************************************************
-//                \t\t\t\t\t\t\t\
-//                question  1
-//                    ********************************************************""");
-//
-////        1.Write a Java program to test if the first and the last element of an array of
-////        integers are same.
-////        The length of the array must be greater than or equal to
-////        2 Test Data:
-////        array = 50, -20, 0, 30, 40, 60, 10
-////        Sample Output: false
-//        System.out.println("enter a number of items:");
-//        int itemcount=input.nextInt();
-//        int count=0;
-//        int [] myArry=new int[itemcount];
-//        while (count<myArry.length){
-//            System.out.println("enter a number :");
-//            int item=input.nextInt();
-//            myArry[count]=item;
-//            count++;
-//        }
-//        System.out.println(myArry[0]==myArry[myArry.length-1]);
-//
-//        System.out.println("""
-//                    ********************************************************
-//                \t\t\t\t\t\t\t\
-//                question  2
-//                    ********************************************************""");
+        System.out.println("""
+                    ********************************************************
+                \t\t\t\t\t\t\t\
+                question  1
+                    ********************************************************""");
+
+//        1.Write a Java program to test if the first and the last element of an array of
+//        integers are same.
+//        The length of the array must be greater than or equal to
+//        2 Test Data:
+//        array = 50, -20, 0, 30, 40, 60, 10
+//        Sample Output: false
+        System.out.println("enter a number of items:");
+        int itemcount=input.nextInt();
+        int count=0;
+        int [] myArry=new int[itemcount];
+        while (count<myArry.length){
+            System.out.println("enter a number :");
+            int item=input.nextInt();
+            myArry[count]=item;
+            count++;
+        }
+        System.out.println(myArry[0]==myArry[myArry.length-1]);
+
+        System.out.println("""
+                    ********************************************************
+                \t\t\t\t\t\t\t\
+                question  2
+                    ********************************************************""");
 
 //        2.Write a Java program to find the numbers greater than the average of the
 //        numbers of a given array.
@@ -46,72 +46,72 @@ public class Main {
 //        The average of the said array is: 22.0
 //        The numbers in the said array that are
 //        greater than the average are: 25 100
-//        int[] maArray={1,4,17,7,25,3,100};
+        int[] maArray={1,4,17,7,25,3,100};
 
-//        ArrayList <Integer> sidArray=new ArrayList<>();
-//        System.out.println(maArray.length);
-//        int average=0;
-//        int sum = 0;
+        ArrayList <Integer> sidArray=new ArrayList<>();
+        System.out.println(maArray.length);
+        int average=0;
+        int sum = 0;
+        System.out.println(sum);
+        System.out.println(average);
+
+        for (int v =0;v<maArray.length;v++){
+            sum=sum+maArray[v];
+        }
+
 //        System.out.println(sum);
+        average=sum/maArray.length;
 //        System.out.println(average);
+        for (int v =0;v<maArray.length;v++){
+            if (average<maArray[v]){
+                sidArray.add(maArray[v]);
+            }
+        }
 
-//        for (int v =0;v<maArray.length;v++){
-//            sum=sum+maArray[v];
-//        }
-//
-////        System.out.println(sum);
-//        average=sum/maArray.length;
-////        System.out.println(average);
-//        for (int v =0;v<maArray.length;v++){
-//            if (average<maArray[v]){
-//                sidArray.add(maArray[v]);
-//            }
-//        }
-//
-//        System.out.println(" The average of the said array is:"+average);
-//
-//        System.out.println("greater than the average are:"+ sidArray);
-//
+        System.out.println(" The average of the said array is:"+average);
 
-//        System.out.println("""
-//                    ********************************************************
-//                \t\t\t\t\t\t\t\
-//                question  3
-//                    ********************************************************""");
+        System.out.println("greater than the average are:"+ sidArray);
 
+
+        System.out.println("""
+                    ********************************************************
+                \t\t\t\t\t\t\t\
+                question  3
+                    ********************************************************""");
+//
 //        3.Write a Java program to get the larger value between first and last
 //        element of an array of integers.
 //        Original Array:
 //          [20, 30, 40]
 //        Sample Output:
 //        Larger value between first and last element: 40
-//        int[] maArrayQ3={20,30,40};
-//        int larger=maArrayQ3[0];
-//        for (int v =0;v<maArrayQ3.length;v++){
-//            if(larger<maArrayQ3[v]){
-//                larger=maArrayQ3[v];
-//            }
-//        }
-//
-//            System.out.println("Larger value between first and last element = "+larger);
-//
-//        System.out.println("""
-//                    ********************************************************
-//                \t\t\t\t\t\t\t\
-//                question  4
-//                    ********************************************************""");
+        int[] maArrayQ3={20,30,40};
+        int larger=maArrayQ3[0];
+        for (int v =0;v<maArrayQ3.length;v++){
+            if(larger<maArrayQ3[v]){
+                larger=maArrayQ3[v];
+            }
+        }
 
+            System.out.println("Larger value between first and last element = "+larger);
+
+        System.out.println("""
+                    ********************************************************
+                \t\t\t\t\t\t\t\
+                question  4
+                    ********************************************************""");
+//
 //        4.Write a Java program to swap the first and last elements of an array and
 //        create a new array.
 //                Original Array:
 //[20, 30, 40]
 //        Sample Output:
 //        New array after swapping the first and last elements: [40, 30, 20]
-//        int temp = maArrayQ3[0];
-//        maArrayQ3[0]=maArrayQ3[maArrayQ3.length-1];
-//        maArrayQ3[maArrayQ3.length-1]=temp;
-//
-//        System.out.println(Arrays.toString(maArrayQ3));
+        int temp = maArrayQ3[0];
+        maArrayQ3[0]=maArrayQ3[maArrayQ3.length-1];
+        maArrayQ3[maArrayQ3.length-1]=temp;
+
+        System.out.println(Arrays.toString(maArrayQ3));
             System.out.println("""
                     ********************************************************
                 \t\t\t\t\t\t\t\
